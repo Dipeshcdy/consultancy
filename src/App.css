@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+  .swiper-pagination{
+    bottom: -5px !important;
+  }
+
+  .swiper-pagination-bullet{
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 5px !important;
+      transition: all 0.5s ease;
+    }
+    .swiper-pagination-bullet-active{
+        width: 30px !important;
+        background-color: red !important;
+    }
+
+    .testimonial-pagination{
+      bottom: 0 !important;
+    }
+
+   .testimonial-pagination .swiper-pagination-bullet
+   {
+    background-color: white !important;
+    opacity: 1 !important;
+   }
+   .testimonial-pagination .swiper-pagination-bullet-active
+   {
+    background-color: red !important;
+   }
+  
+
+
+    .testimonial-swiper{
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .testimonial-swiper .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      max-width: 600px;
+    }
+    
+    .testimonial-swiper .swiper-slide img {
+      display: block;
+      width: 100%;
+    }

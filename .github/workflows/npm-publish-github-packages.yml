@@ -29,7 +29,6 @@ jobs:
       with:
         branch: gh-pages
         folder: build # Change this to your build folder
-        cname: your-custom-domain.com # Optional: Specify a custom domain
 
     - name: Cleanup
       run: rm -rf node_modules

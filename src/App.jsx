@@ -12,6 +12,9 @@ function App() {
   return (
     <>
       <Navbar />
+      {/* <section className='mt-[7.8rem]'>
+        <Home />
+      </section> */}
       <section className='mt-[7.8rem]'>
         <Home />
       </section>

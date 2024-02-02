@@ -35,78 +35,68 @@ import {
   Autoplay,
   Pagination,
   EffectCreative,
+  EffectFade,
   EffectCoverflow
 } from "swiper/modules";
 const Home = () => {
   return (
     <>
-      <section className="lg:h-[80vh]">
+      <section className="">
         <Swiper
           grabCursor={true}
-          effect={"creative"}
-          autoHeight={true}
-          breakpoints={{
-            1024: {
-              autoHeight: false,
-            },
-            // 768: {
-            //   slidesPerView: 4,
-            //   spaceBetween: 40,
-            // },
-            // 1024: {
-            //   slidesPerView: 5,
-            //   spaceBetween: 50,
-            // },
-          }}
-          creativeEffect={{
-            prev: {
-              shadow: true,
-              translate: [0, 0, -400],
-            },
-            next: {
-              translate: ["100%", 0, 0],
-            },
-          }}
-          loop={true}
+          effect={"fade"}
           autoplay={{
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           pagination={{
             clickable: true,
           }}
-          modules={[EffectCreative, Pagination, Autoplay, Navigation]}
-          className="mySwiper group pb-5"
+          modules={[EffectFade, Pagination, Autoplay, Navigation]}
+          className="mySwiper hero-swiper group pb-5 lg:h-[70vh] overflow-hidden"
         >
           <SwiperSlide>
-            <img
-              className="w-full h-full object-cover object-center"
-              src={slider1}
-            />
+            <div className="overflow-hidden h-full w-full">
+              <img
+                className="w-full h-full object-cover object-center"
+                src={slider1}
+              />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              className="w-full h-full object-cover object-center"
-              src={slider2}
-            />
+            <div className="overflow-hidden h-full w-full">
+
+              <img
+                className="w-full h-full object-cover object-center"
+                src={slider2}
+              />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              className="w-full h-full object-cover object-center"
-              src={slider3}
-            />
+            <div className="overflow-hidden h-full w-full">
+
+              <img
+                className="w-full h-full object-cover object-center"
+                src={slider3}
+              />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              className="w-full h-full object-cover object-center"
-              src={slider4}
-            />
+            <div className="overflow-hidden h-full w-full">
+
+              <img
+                className="w-full h-full object-cover object-center"
+                src={slider4}
+              />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              className="w-full h-full object-cover object-center"
-              src={slider5}
-            />
+            <div className="overflow-hidden h-full w-full">
+              <img
+                className="w-full h-full object-cover object-center"
+                src={slider5}
+              />
+            </div>
           </SwiperSlide>
           <SwiperNavButton />
         </Swiper>

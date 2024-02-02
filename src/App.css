@@ -36,6 +36,16 @@ body{
         background-color: red !important;
     }
 
+
+    /* hero swiper */
+    .hero-swiper .swiper-slide img{
+      transition: all 15s;
+      }
+  
+      .hero-swiper .swiper-slide-active img{
+      scale: 1.25;
+      }
+
     .testimonial-pagination{
       bottom: 0 !important;
     }
@@ -66,4 +76,16 @@ body{
     .testimonial-swiper .swiper-slide img {
       display: block;
       width: 100%;
+    }
+
+    .testimonial-swiper .swiper-slide{
+
+      filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-filter: blur(3px);
+      backdrop-filter: blur(3px);
+    }
+    .testimonial-swiper .swiper-slide-active{
+      filter: blur(0);
+      -webkit-filter: blur(0);
     }

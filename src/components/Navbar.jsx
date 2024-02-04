@@ -86,13 +86,13 @@ function Navbar() {
           </div>
           <div className="my-auto w-full lg:block hidden">
             <ul className="flex text-lg gap-5 justify-center">
-              <li><Link to="/" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Home</Link></li>
+              <li><Link to="/consultancy" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Home</Link></li>
               <li className="group relative">
                 <a className="flex cursor-default gap-1 relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">About us <FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></a>
                 <div className="group-hover:z-10 pointer-events-none group-hover:pointer-events-auto z-0 absolute -left-5 opacity-0 invisible -mt-3 transition-all duration-500 pt-4 w-[200px] group-hover:visible group-hover:opacity-100 group-hover:mt-0">
                   <ul className="bg-white rounded-xl shadow-lg shadow-gray-700 p-4">
-                    <li className="mt-2 flex"><Link to="/message" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Introduction</Link></li>
-                    <li className="mt-2 flex"><Link to="/message" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Message From CEO</Link></li>
+                    <li className="mt-2 flex"><Link to="/consultancy/message" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Introduction</Link></li>
+                    <li className="mt-2 flex"><Link to="/consultancy/message" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Message From CEO</Link></li>
                     <li className="mt-2 flex"><a className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Our Team</a></li>
                     <li className="mt-2 flex"><a className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Why us?</a></li>
                   </ul>

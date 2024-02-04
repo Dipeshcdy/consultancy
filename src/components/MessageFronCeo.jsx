@@ -5,13 +5,13 @@ const MessageFronCeo = () => {
   const [isHovered2, setIsHovered2] = useState(false);
   return (
     <>
-      <section className="messageFromCeo-section font-sans">
+      <section className="messageFromCeo-section">
         <div className="xl:h-[40vh] sm:h-[20vh] h-[25vh] relative">
           <div className='overflow-hidden w-full h-full'>
-            <img className='w-full h-full object-cover object-center' src={img} />
+            <img className='w-full h-full object-cover object-center brightness-75' src={img} />
           </div>
           <div className="absolute flex top-0 bottom-0 right-0 left-0 wow animate__animated animate__zoomIn">
-            <h2 className="mt-auto ml-auto mr-auto mb-10 md:text-5xl text-3xl font-bold uppercase text-red-500" >Message From CEO</h2>
+            <h2 className="mt-auto ml-auto mr-auto mb-10 md:text-5xl text-3xl font-bold uppercase text-white" >Message From CEO</h2>
           </div>
         </div>
         <div className="content relative overflow-hidden lg:py-32 py-20">
@@ -31,10 +31,12 @@ const MessageFronCeo = () => {
               <div className="border-2 border-r-0 z-20 border-[#2E65AF] bg-white relative pl-16 pr-44 py-20 rounded-3xl rounded-r-none">
                 <h2 className=" heading text-5xl font-bold">Message From</h2>
                 <h2 className=" heading text-5xl font-bold  text-red-600">CEO</h2>
-                <p className="text-justify text-md mt-5">It has become appallingly obvious that our technology has exceeded our humanity. The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.</p>
+                <p className="text-justify text-md mt-5">
+                  At Surplus Education Consultancy, our commitment has always been to provide unparalleled support and guidance to students embarking on their educational journey in Japan and Korea. Our dedicated team is here to ensure your experience is not only academically enriching but also culturally immersive.
+                </p>
                 <div className="mt-2 text-right">
-                  <h2 className=" font-semibold">Niroj Dhungel</h2>
-                  <h2 className="text-sm">CEO, Amazing Infosys</h2>
+                  <h2 className=" font-semibold">Name Surname</h2>
+                  <h2 className="text-sm">CEO, Surplus Educatin Consultancy</h2>
                 </div>
                 <div className="absolute w-[50px] bg-white z-10 h-[50px] border-b-2 border-r-2 -bottom-[26px] left-14 rotate-45 border-[#2E65AF]">
 

@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx'
 import Home from './components/Home.jsx'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MessageFromCeo from "./components/MessageFronCeo.jsx";
+import About from "./components/About.jsx";
 import './App.css'
 
 
@@ -25,6 +26,13 @@ function App() {
             <>
               <section className='mt-[7.8rem]'>
                 <MessageFromCeo />
+              </section>
+            </>
+          } />
+          <Route exact path="/consultancy/about" element={
+            <>
+              <section className='mt-[7.8rem]'>
+                <About />
               </section>
             </>
           } />

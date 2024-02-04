@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
 import Home from './components/Home.jsx'
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Layout from './components/layout/Layout.jsx'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import MessageFromCeo from "./components/MessageFronCeo.jsx";
 import './App.css'
 
@@ -10,29 +11,35 @@ function App() {
   return (
 
     <>
-      
-      <BrowserRouter>
+      <Router>
+      <Navbar />
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={
-              <>
-                <section className='mt-[7.8rem]'>
-                  <Home />
-                </section>
-              </>
-            } />
-            <Route path="/message" element={
-              <>
-                <section className='mt-[7.8rem]'>
-                  <MessageFromCeo />
-                </section>
-              </>
-            } />
-            {/* <Route path="contact" element={<Contact />} /> */}
-            {/* <Route path="*" element={<NoPage />} /> */}
-          </Route>
+          <Route exact path='/' element={
+            <>
+              <section className='mt-[7.8rem]'>
+                <Home />
+              </section>
+            </>
+          } />
+          <Route exact path="/message" element={
+            <>
+              <section className='mt-[7.8rem]'>
+                <MessageFromCeo />
+              </section>
+            </>
+          } />
+          <Route exact path="*" element={
+            <>
+              <section className='mt-[7.8rem]'>
+                <MessageFromCeo />
+              </section>
+            </>
+          } />
+
         </Routes>
-      </BrowserRouter>
+      <Footer />
+      </Router>
+
     </>
   )
 }

@@ -90,3 +90,64 @@ body{
       filter: blur(0);
       -webkit-filter: blur(0);
     }
+
+
+
+
+    /* message from ceo section */
+
+    .messageFromCeo-section .overlay-image{
+      background-image: url('/images/Digital Marketing Careers.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      filter: blur(4px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  .messageFromCeo-section .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      opacity: 0.8;
+  }
+  .messageFromCeo-section .testimonial-container-1{
+      /* background-color: #55c1f9; */
+      background: rgb(86,193,249);
+      background: linear-gradient(90deg, rgba(86,193,249,1) 31%, rgba(145,208,244,0.9725023798581933) 100%); 
+  }
+  .messageFromCeo-section .testimonial-container-2{
+      /* background-color: #55c1f9; */
+      background: rgb(86,193,249);
+      background: linear-gradient(300deg, rgba(86,193,249,1) 31%, rgba(145,208,244,0.9725023798581933) 100%); 
+  }
+
+  .messageFromCeo-section .message-div .heading{
+      background: linear-gradient(to left, #ffa200, #DF4838);
+      -webkit-background-clip: text;
+      color: transparent;
+      padding-bottom: 10px;
+      /* display: inline-block; */
+  }
+  .messageFromCeo-section .circle{
+      background: linear-gradient(to right, #ffa200, #DF4838);
+      transition: transform 2s;
+      /* background: linear-gradient(to right, #ff0000, #00ff00); */
+      /* animation: rotate 0.5s infinite linear; */
+      /* animation: rotate360 2s linear infinite; */
+      
+  }
+  .messageFromCeo-section .circle:hover{
+      transform: rotate(360deg); 
+      /* cursor: pointer; */
+     
+      /* transform: scale(1.5); */
+
+  }

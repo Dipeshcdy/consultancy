@@ -12,6 +12,7 @@ import { IoMdClose } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
 import { IoPhonePortraitOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // const [isNavVisible, setNavVisibility] = useState(false);
@@ -60,78 +61,78 @@ function Navbar() {
       <section className="fixed top-0 z-50 w-full">
         <div className={`${fix ? 'opacity-0 invisible' : 'visible opacity-100'} hidden transition-all bg-white duration-700 md:flex justify-center bg-re-600 text-hite py-1`}>
           <div className="flex gap-5 text-lg">
-            <a href="" className="flex gap-2">
+            <Link className="flex gap-2">
               <FaPhone className="my-auto text-xl" /> <span>056-494791</span>
-            </a>
+            </Link>
 
-            <a href="" className="flex gap-2">
+            <Link className="flex gap-2">
               <IoPhonePortraitOutline className="my-auto text-xl" /> <span>9855076574</span>
-            </a>
+            </Link>
 
-            <a href="" className="flex gap-2">
+            <Link className="flex gap-2">
               <MdEmail className="my-auto text-2xl" /> <span>info@cse.com</span>
-            </a>
+            </Link>
             <div className="flex gap-2">
-              <a href="" className="my-auto"><FaFacebookSquare className="text-xl" title="facebook" /></a>
-              <a href="" className="my-auto"><FaInstagramSquare className="text-xl" title="instagram" /></a>
+              <Link className="my-auto"><FaFacebookSquare className="text-xl" title="facebook" /></Link>
+              <Link className="my-auto"><FaInstagramSquare className="text-xl" title="instagram" /></Link>
             </div>
 
           </div>
         </div>
 
-        <div className={`${fix ? 'top-0 shadow-xl ' : 'md:top-9 '}absolute py-2 transition-all duration-700 bg-white flex w-full z-50 justify-between lg:px-20 px-5`}>
+        <div className={`${fix ? 'top-0 shadow-xl ' : 'md:top-9 '}absolute py-2 transition-all duration-700 bg-white flex w-full z-[999] justify-between lg:px-20 px-5`}>
           <div className="w-[200px]">
             <img className="w-full" src={logo} alt="" />
           </div>
           <div className="my-auto w-full lg:block hidden">
             <ul className="flex text-lg gap-5 justify-center">
-              <li><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Home</a></li>
+              <li><Link to="/" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Home</Link></li>
               <li className="group relative">
-                <a href="" className="flex gap-1 relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">About us <FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></a>
+                <Link className="flex gap-1 relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">About us <FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></Link>
                 <div className="group-hover:z-10 pointer-events-none group-hover:pointer-events-auto z-0 absolute -left-5 opacity-0 invisible -mt-3 transition-all duration-500 pt-4 w-[200px] group-hover:visible group-hover:opacity-100 group-hover:mt-0">
                   <ul className="bg-white rounded-xl shadow-lg shadow-gray-700 p-4">
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Message From CEO</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Our Team</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Why us?</a></li>
+                    <li className="mt-2 flex"><Link to="/message" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Message From CEO</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Our Team</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Why us?</Link></li>
                   </ul>
                 </div>
               </li>
               <li className="group relative">
-                <a href="" className="flex gap-1  relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Services<FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></a>
+                <Link className="flex gap-1  relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Services<FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></Link>
                 <div className="group-hover:z-10  pointer-events-none group-hover:pointer-events-auto -z-1 absolute -left-5 opacity-0 invisible -mt-3 transition-all duration-500 pt-4 min-w-[250px] w-auto group-hover:visible group-hover:opacity-100 group-hover:mt-0">
                   <ul className="bg-white rounded-xl shadow-lg shadow-gray-700 p-4">
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Education Counseling</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Selection Of Course</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Admission Guidance</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Career Abroad</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Travel Guidance</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Visa Assistance</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Financial Estimation</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Country Information</a></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Education Counseling</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Selection Of Course</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Admission Guidance</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Career Abroad</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Travel Guidance</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Visa Assistance</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Financial Estimation</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Country Information</Link></li>
                   </ul>
                 </div>
               </li>
               <li className="group relative">
-                <a href="" className="flex gap-1  relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Training<FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></a>
+                <Link className="flex gap-1  relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Training<FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></Link>
                 <div className="group-hover:z-10  pointer-events-none group-hover:pointer-events-auto -z-1 absolute -left-5 opacity-0 invisible -mt-3 transition-all duration-500 pt-4 min-w-[250px] w-auto group-hover:visible group-hover:opacity-100 group-hover:mt-0">
                   <ul className="bg-white rounded-xl shadow-lg shadow-gray-700 p-4">
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">JLPT</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">NAT</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">JFT</a></li>
-                    <li className="mt-2 flex"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">SSW</a></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">JLPT</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">NAT</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">JFT</Link></li>
+                    <li className="mt-2 flex"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">SSW</Link></li>
                   </ul>
                 </div>
               </li>
               <li className="group relative">
-                <a href="" className="flex gap-1 relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Study Abroad<FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></a>
+                <Link className="flex gap-1 relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Study Abroad<FaAngleDown className="mt-1.5 duration-500 group-hover:scale-y-[-1]" /></Link>
                 <div className="group-hover:z-10 pointer-events-none group-hover:pointer-events-auto z-0 absolute -left-5 opacity-0 invisible -mt-3 transition-all duration-500 pt-4 min-w-[200px] group-hover:visible group-hover:opacity-100 group-hover:mt-0">
                   <ul className="bg-white rounded-xl shadow-lg shadow-gray-700 p-4">
-                    <li className="flex mt-2"><a href="" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Japan</a></li>
+                    <li className="flex mt-2"><Link className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Japan</Link></li>
                   </ul>
                 </div>
               </li>
-              <li><a href="" className="relative before:rounded-lg before:content-[''] before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Gallery</a></li>
-              <li><a href="" className="relative before:rounded-lg before:content-[''] before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Contact Us</a></li>
+              <li><Link className="relative before:rounded-lg before:content-[''] before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Gallery</Link></li>
+              <li><Link className="relative before:rounded-lg before:content-[''] before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Contact Us</Link></li>
             </ul>
           </div>
           <div className="flex lg:hidden">

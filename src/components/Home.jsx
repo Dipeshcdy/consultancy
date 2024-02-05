@@ -53,7 +53,7 @@ const Home = () => {
             clickable: true,
           }}
           modules={[EffectFade, Pagination, Autoplay, Navigation]}
-          className="mySwiper hero-swiper group pb-5 lg:h-[70vh] overflow-hidden"
+          className="mySwiper hero-swiper group pb-5 lg:h-[80vh] overflow-hidden"
         >
           <SwiperSlide>
             <div className="overflow-hidden h-full w-full">
@@ -1642,12 +1642,12 @@ const Home = () => {
                 slideShadows: false,
               }}
               navigation={{
-                nextEl:'.testimonial-button-next',
-                prevEl:'.testimonial-button-prev',
-                clickable:true
+                nextEl: '.testimonial-button-next',
+                prevEl: '.testimonial-button-prev',
+                clickable: true
               }}
-              pagination={{ el:'.testimonial-pagination',clickable:true}}
-              modules={[EffectCoverflow, Pagination,Navigation]}
+              pagination={{ el: '.testimonial-pagination', clickable: true }}
+              modules={[EffectCoverflow, Pagination, Navigation]}
               className="mySwiper testimonial-swiper"
             >
               <SwiperSlide>
@@ -1850,7 +1850,7 @@ const Home = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              
+
             </Swiper>
           </div>
           {/*end of slider section */}
@@ -1859,7 +1859,7 @@ const Home = () => {
               <FaRegArrowAltCircleLeft className="text-4xl hover:text-primary duration-500" />
             </div>
             <div className="cursor-pointer testimonial-button-next">
-              <FaRegArrowAltCircleRight className="text-4xl hover:text-primary duration-500"/>
+              <FaRegArrowAltCircleRight className="text-4xl hover:text-primary duration-500" />
             </div>
           </div>
         </div>

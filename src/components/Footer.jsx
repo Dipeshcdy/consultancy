@@ -62,7 +62,7 @@ const Footer = () => {
                 <div className=" mr-2">
                 <CiMail className='text-xl' />
                 </div>
-                <a className="text-gray-600 hover:text-gray-800">oceanheartedu2023@gmail.com</a>
+                <a className="text-gray-600 hover:text-gray-800">surplusinternational7@gmail.com</a>
               </li>
               <li className="flex gap-5 mt-2 ">
                 <a href="https://www.facebook.com/bhim.lamichhane.754"><i className="fa-brands text-2xl hover:text-blue-600 hover:-translate-y-1.5 transition-all duration-500  fa-facebook"></i></a>

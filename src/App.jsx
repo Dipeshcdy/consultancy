@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AnimateRoutes from './components/AnimateRoutes.jsx';
 import './App.css'
 
-
 function App() {
   return (
 

@@ -95,7 +95,7 @@ function Navbar() {
                     <li className="mt-2 flex"><Link to="/consultancy/about" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Introduction</Link></li>
                     <li className="mt-2 flex"><Link to="/consultancy/message" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Message From CEO</Link></li>
                     <li className="mt-2 flex"><Link to="/consultancy/team" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Our Team</Link></li>
-                    <li className="mt-2 flex"><a className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Why us?</a></li>
+                    <li className="mt-2 flex"><Link to="/consultancy/why-choose-us" className="relative before:content-[''] before:rounded-lg before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Why us?</Link></li>
                   </ul>
                 </div>
               </li>
@@ -133,7 +133,7 @@ function Navbar() {
                   </ul>
                 </div>
               </li>
-              <li><a className="relative before:rounded-lg before:content-[''] before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Gallery</a></li>
+              <li><Link to="/consultancy/gallery" className="relative before:rounded-lg before:content-[''] before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Gallery</Link></li>
               <li><Link to="/consultancy/contact" className="relative before:rounded-lg before:content-[''] before:h-1 before:bg-red-500 before:absolute before:duration-500 hover:before:w-full before:w-0 before:-bottom-1">Contact Us</Link></li>
             </ul>
           </div>

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors:{
-        primary:'#FF004D',
+        primary:'#DF4838',
         secondary:'#FAEF5D'
       },
       keyframes:{
@@ -17,7 +17,8 @@ export default {
         }
       },
       animation:{
-        'scale':'scale 10s linear infinite'
+        'scale':'scale 10s linear infinite',
+        'zoom':'scale 1.3s linear '
       }
     },
   },

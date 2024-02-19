@@ -1,6 +1,8 @@
 import React from "react";
 import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 import slider1 from "../assets/images/slider1.jpg";
 import slider2 from "../assets/images/slider2.jpg";
 import slider3 from "../assets/images/slider3.jpg";
@@ -724,12 +726,13 @@ const Home = () => {
                   maxime mollitia reiciendis delectus veniam nobis officiis
                   exercitationem quis cum, quia magnam quaerat.
                 </p>
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  to="/consultancy/about"
                   className="inline-flex items-center justify-center rounded-md bg-primary border-2 border-primary hover:bg-transparent hover:text-primary transition-all duration-500 px-7 py-3 text-center text-base  medium text-white hover:bg-opacity-90"
                 >
                   Get Started
-                </a>
+                </Link>
+                
               </div>
             </div>
           </div>

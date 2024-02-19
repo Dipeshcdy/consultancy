@@ -9,6 +9,9 @@ import Team from './Team.jsx';
 import Gallery from './Gallery.jsx';
 import Whychoose from './Whychoose.jsx';
 import ScrollToTop from './ScrollToTop.jsx';
+import Germany from './Training/Germany.jsx';
+import Japan from './Training/Japan.jsx';
+import Korean from './Training/korean.jsx';
 
 const AnimateRoutes = () => {
     const location = useLocation();
@@ -102,6 +105,45 @@ const AnimateRoutes = () => {
                             </motion.section>
                         </>
                     } />
+
+                    {/* training route */}
+                    <Route exact path="/consultancy/training/germany-language" element={
+                        <>
+                            <motion.section
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.4 }}
+                                className='mt-[7.8rem]'>
+                                <Germany />
+                            </motion.section>
+                        </>
+                    } />
+                    <Route exact path="/consultancy/training/japanese-language" element={
+                        <>
+                            <motion.section
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.4 }}
+                                className='mt-[7.8rem]'>
+                                <Japan />
+                            </motion.section>
+                        </>
+                    } />
+                    <Route exact path="/consultancy/training/korean-language" element={
+                        <>
+                            <motion.section
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.4 }}
+                                className='mt-[7.8rem]'>
+                                <Korean />
+                            </motion.section>
+                        </>
+                    } />
+                    {/* end of training route */}
                     <Route exact path="*" element={
                         <>
                             <section className='mt-[7.8rem]'>
